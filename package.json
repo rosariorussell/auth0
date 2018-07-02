@@ -1,40 +1,18 @@
 {
-  "name": "remotelyjs",
-  "version": "1.0.0",
+  "name": "user-profile",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "8.1.1",
-    "npm": "5.0.3"
-  },
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "serve -p 3000"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rosariorussell/RemotelyJS.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rosariorussell/RemotelyJS/issues"
-  },
-  "homepage": "https://github.com/rosariorussell/RemotelyJS#readme",
+  "author": "Auth0",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "concurrently": "^3.5.1",
-    "connect-ensure-login": "^0.1.1",
-    "cookie-session": "^2.0.0-beta.3",
-    "express": "^4.16.3",
-    "mongoose": "^5.1.4",
-    "morgan": "^1.9.0",
-    "passport": "^0.4.0",
-    "passport-auth0": "^0.6.1",
-    "passport-google-oauth20": "^1.0.0",
-    "stripe": "^6.1.1"
+    "auth0-js": "^9.0.0",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "serve": "^5.1.5"
   }
 }
